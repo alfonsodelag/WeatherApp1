@@ -6,6 +6,7 @@ const baseURL = 'https://api.openweathermap.org/data/2.5/weather?';
 
 const onSuccess = position => {
     console.log('Desde onSuccess', position);
+    console.log("hello")
 
     const { coords: { latitude, longitude } } = position;
     callWeather(latitude, longitude);
